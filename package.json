@@ -15,5 +15,13 @@
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"author": "Keith Rocheck <keith.rocheck@gmail.com>",
-	"license": "MIT"
+	"license": "MIT",
+	"homepage": "https://github.com/bitfocus/companion-module-justmacros-lua#readme",
+	"bugs": {
+		"url": "https://github.com/bitfocus/companion-module-justmacros-lua/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bitfocus/companion-module-justmacros-lua.git"
+	}
 }
