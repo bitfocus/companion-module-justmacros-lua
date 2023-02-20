@@ -1,2 +1,4 @@
+/pkg
+/pkg.tgz
 node_modules/
-icons/
+yarn-error.log
