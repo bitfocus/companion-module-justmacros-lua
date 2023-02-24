@@ -18,16 +18,16 @@
 import { Client } from 'node-rest-client'
 
 export default class Rest {
-	static Get(url, cb, extra_headers, extra_args) {
-		const client = new Client(extra_args)
+	static Get(url, cb, extraHeaders, extraArgs) {
+		const client = new Client(extraArgs)
 
 		let args = {
 			headers: { 'Content-Type': 'application/json' },
 		}
 
-		if (extra_headers !== undefined) {
-			for (let header in extra_headers) {
-				args.headers[header] = extra_headers[header]
+		if (extraHeaders !== undefined) {
+			for (let header in extraHeaders) {
+				args.headers[header] = extraHeaders[header]
 			}
 		}
 
@@ -36,22 +36,21 @@ export default class Rest {
 				cb(null, { data: data, response: response })
 			})
 			.on('error', function (error) {
-				debug('error response:', error)
 				cb(true, { error: error })
 			})
 	}
 
-	static Post(url, data, cb, extra_headers, extra_args) {
-		const client = new Client(extra_args)
+	static Post(url, data, cb, extraHeaders, extraArgs) {
+		const client = new Client(extraArgs)
 
 		let args = {
 			data: data,
 			headers: { 'Content-Type': 'application/json' },
 		}
 
-		if (extra_headers !== undefined) {
-			for (let header in extra_headers) {
-				args.headers[header] = extra_headers[header]
+		if (extraHeaders !== undefined) {
+			for (let header in extraHeaders) {
+				args.headers[header] = extraHeaders[header]
 			}
 		}
 
@@ -60,22 +59,21 @@ export default class Rest {
 				cb(null, { data: data, response: response })
 			})
 			.on('error', function (error) {
-				debug('error response:', error)
 				cb(true, { error: error })
 			})
 	}
 
-	static Put(url, data, cb, extra_headers, extra_args) {
-		const client = new Client(extra_args)
+	static Put(url, data, cb, extraHeaders, extraArgs) {
+		const client = new Client(extraArgs)
 
 		let args = {
 			data: data,
 			headers: { 'Content-Type': 'application/json' },
 		}
 
-		if (extra_headers !== undefined) {
-			for (let header in extra_headers) {
-				args.headers[header] = extra_headers[header]
+		if (extraHeaders !== undefined) {
+			for (let header in extraHeaders) {
+				args.headers[header] = extraHeaders[header]
 			}
 		}
 
@@ -84,22 +82,21 @@ export default class Rest {
 				cb(null, { data: data, response: response })
 			})
 			.on('error', function (error) {
-				debug('error response:', error)
 				cb(true, { error: error })
 			})
 	}
 
-	static Patch(url, data, cb, extra_headers, extra_args) {
-		const client = new Client(extra_args)
+	static Patch(url, data, cb, extraHeaders, extraArgs) {
+		const client = new Client(extraArgs)
 
 		let args = {
 			data: data,
 			headers: { 'Content-Type': 'application/json' },
 		}
 
-		if (extra_headers !== undefined) {
-			for (let header in extra_headers) {
-				args.headers[header] = extra_headers[header]
+		if (extraHeaders !== undefined) {
+			for (let header in extraHeaders) {
+				args.headers[header] = extraHeaders[header]
 			}
 		}
 
@@ -108,22 +105,21 @@ export default class Rest {
 				cb(null, { data: data, response: response })
 			})
 			.on('error', function (error) {
-				debug('error response:', error)
 				cb(true, { error: error })
 			})
 	}
 
-	static Delete(url, data, cb, extra_headers, extra_args) {
-		const client = new Client(extra_args)
+	static Delete(url, data, cb, extraHeaders, extraArgs) {
+		const client = new Client(extraArgs)
 
 		let args = {
 			data: data,
 			headers: { 'Content-Type': 'application/json' },
 		}
 
-		if (extra_headers !== undefined) {
-			for (let header in extra_headers) {
-				args.headers[header] = extra_headers[header]
+		if (extraHeaders !== undefined) {
+			for (let header in extraHeaders) {
+				args.headers[header] = extraHeaders[header]
 			}
 		}
 
@@ -132,7 +128,6 @@ export default class Rest {
 				cb(null, { data: data, response: response })
 			})
 			.on('error', function (error) {
-				debug('error response:', error)
 				cb(true, { error: error })
 			})
 	}
