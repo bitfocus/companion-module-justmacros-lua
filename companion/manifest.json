@@ -3,7 +3,7 @@
 	"name": "justmacros-lua",
 	"shortname": "justmacros",
 	"description": "Module to control JustMacros via Companion",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"license": "MIT",
 	"repository": "git+https://github.com/bitfocus/companion-module-justmacros-lua.git",
 	"bugs": "https://github.com/bitfocus/companion-module-justmacros-lua/issues",
@@ -18,7 +18,7 @@
 		"type": "node18",
 		"api": "nodejs-ipc",
 		"apiVersion": "0.0.0",
-		"entrypoint": "..\\src\\index.js"
+		"entrypoint": "../src/index.js"
 	},
 	"manufacturer": "JustMacros",
 	"products": ["LUA"],

@@ -99,7 +99,7 @@ class JustmacrosLuaInstance extends InstanceBase {
 	 * @since 1.0.0
 	 */
 	sendCommand(uri) {
-		let cmd = `http://${this.config.host}:${this.port}/EXECUTELUA:${uri}`
+		let cmd = `http://${this.config.host}:${this.config.port}/EXECUTELUA:${uri}`
 
 		if (uri.length > 0) {
 			this.log('debug', `Get: ${cmd}`)
