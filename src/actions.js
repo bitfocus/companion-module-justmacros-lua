@@ -9,7 +9,7 @@ import { Fields } from './setup.js'
 export function updateActions() {
 	this.setActionDefinitions({
 		luaFunc: {
-			label: 'Execute Function',
+			name: 'Execute Function',
 			options: [Fields.FunctionName, Fields.Parameters],
 			callback: ({ options }) => {
 				if (options.func != '') {
@@ -18,7 +18,7 @@ export function updateActions() {
 			},
 		},
 		luaScript: {
-			label: 'Execute Script',
+			name: 'Execute Script',
 			options: [Fields.ScriptName],
 			callback: ({ options }) => {
 				if (options.script != '') {

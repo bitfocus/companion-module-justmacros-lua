@@ -3,7 +3,7 @@
 	"name": "justmacros-lua",
 	"shortname": "justmacros",
 	"description": "Module to control JustMacros via Companion",
-	"version": "2.0.1",
+	"version": "0.0.0",
 	"license": "MIT",
 	"repository": "git+https://github.com/bitfocus/companion-module-justmacros-lua.git",
 	"bugs": "https://github.com/bitfocus/companion-module-justmacros-lua/issues",
