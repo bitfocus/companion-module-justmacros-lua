@@ -14,6 +14,6 @@ export const Fields = {
 		type: 'textinput',
 		label: 'Script Name',
 		id: 'script',
-		regex: '/^[A-Za-z0-9_-]*$/',
+		regex: '/^[A-Za-z0-9 _-]*$/',
 	},
 }
